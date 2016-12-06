@@ -1,0 +1,62 @@
+﻿<Window x:Class="Study_Chapter_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Process Manager" Height="600" Width="1200">
+    <Grid>
+        <Label HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="---------------------------------------------------------------------------------------- File Copy ----------------------------------------------------------------------------------------" Margin="10,10,0,0" VerticalAlignment="Top" Height="28" FontWeight="Bold" Width="1160" HorizontalAlignment="Left"/>
+        <Label HorizontalAlignment="Left" Margin="20,43,0,0" VerticalAlignment="Top"/>
+        <Label Content="Target :" HorizontalAlignment="Left" Margin="10,74,0,0" VerticalAlignment="Top" Height="27"/>
+        <Label Content="Target :" HorizontalAlignment="Left" Margin="10,43,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxTarget1" HorizontalAlignment="Left" Height="23" Margin="67,46,0,0" TextWrapping="Wrap" Text="Target Path" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxTarget2" HorizontalAlignment="Left" Height="23" Margin="67,78,0,0" TextWrapping="Wrap" Text="Target Path" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="ButtonTarget1" Content="..." HorizontalAlignment="Left" Margin="372,46,0,0" VerticalAlignment="Top" Width="25" Height="23" Click="ButtonTarget1_Click"/>
+        <Button x:Name="ButtonTarget2" Content="..." HorizontalAlignment="Left" Margin="372,78,0,0" VerticalAlignment="Top" Width="25" Height="23"/>
+        <Label Content="Source :" HorizontalAlignment="Left" Margin="414,46,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.308,0.115" Height="23"/>
+        <Label Content="Source :" HorizontalAlignment="Left" Margin="414,78,0,0" VerticalAlignment="Top" Height="23"/>
+        <TextBox x:Name="TextBoxSource1" HorizontalAlignment="Left" Height="23" Margin="473,46,0,0" TextWrapping="Wrap" Text="Souce Path" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxSource2" HorizontalAlignment="Left" Height="23" Margin="473,78,0,0" TextWrapping="Wrap" Text="Souce Path" VerticalAlignment="Top" Width="300"/>
+        <Button x:Name="ButtonSource1" Content="..." HorizontalAlignment="Left" Margin="778,46,0,0" VerticalAlignment="Top" Width="25" Height="23"/>
+        <Button x:Name="ButtonSource2" Content="..." HorizontalAlignment="Left" Margin="778,78,0,0" VerticalAlignment="Top" Width="25" Height="23"/>
+        <CheckBox x:Name="CheckBoxCopy1" Content="Day" HorizontalAlignment="Left" Margin="808,54,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxCopy2" Content="Day" HorizontalAlignment="Left" Margin="808,86,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonCopyStart1" Content="Button" HorizontalAlignment="Left" Margin="870,46,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <Button x:Name="ButtonCopyStart2" Content="Button" HorizontalAlignment="Left" Margin="870,78,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <Label Content="-------------------------------------------- File Delete --------------------------------------------" Margin="10,116,0,0" Height="28" FontWeight="Bold" Width="580" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxDelete1" HorizontalAlignment="Left" Height="26" Margin="56,158,0,0" TextWrapping="Wrap" Text="Delete File" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxDelete2" HorizontalAlignment="Left" Height="26" Margin="56,189,0,0" TextWrapping="Wrap" Text="Delete File" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxDelete3" HorizontalAlignment="Left" Height="26" Margin="56,220,0,0" TextWrapping="Wrap" Text="Delete File" VerticalAlignment="Top" Width="300"/>
+        <Label Content="Extension :" HorizontalAlignment="Left" Margin="364,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Extension :" HorizontalAlignment="Left" Margin="364,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="Extension :" HorizontalAlignment="Left" Margin="364,220,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxExtension1" HorizontalAlignment="Left" Height="26" Margin="437,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="TextBoxExtension2" HorizontalAlignment="Left" Height="26" Margin="437,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <TextBox x:Name="TextBoxExtension3" HorizontalAlignment="Left" Height="26" Margin="437,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50"/>
+        <Label Content="-------------------------------------------- Auto Check --------------------------------------------" Margin="0,116,0,0" Height="28" FontWeight="Bold" Width="580" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="640,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="640,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="Path :" HorizontalAlignment="Left" Margin="640,220,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBoxAutoCheck1" HorizontalAlignment="Left" Height="26" Margin="686,158,0,0" TextWrapping="Wrap" Text="Auto Check path" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxAutoCheck2" HorizontalAlignment="Left" Height="26" Margin="686,189,0,0" TextWrapping="Wrap" Text="Auto Check path" VerticalAlignment="Top" Width="300"/>
+        <TextBox x:Name="TextBoxAutoCheck3" HorizontalAlignment="Left" Height="26" Margin="686,223,0,0" TextWrapping="Wrap" Text="Auto Check path" VerticalAlignment="Top" Width="300"/>
+        <CheckBox x:Name="CheckBoxDelete1" Content="Day" HorizontalAlignment="Left" Margin="492,169,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxDelete2" Content="Day" HorizontalAlignment="Left" Margin="492,200,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonDeleteStart1" Content="Button" HorizontalAlignment="Left" Margin="543,161,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <Button x:Name="ButtonDeleteStart2" Content="Button" HorizontalAlignment="Left" Margin="543,192,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <CheckBox x:Name="CheckBoxDelete3" Content="Day" HorizontalAlignment="Left" Margin="492,231,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonDeleteStart3" Content="Button" HorizontalAlignment="Left" Margin="543,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <CheckBox x:Name="CheckBoxAutoCheck1" Content="Auto" HorizontalAlignment="Left" Margin="993,169,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxAutoCheck2" Content="Auto" HorizontalAlignment="Left" Margin="993,200,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonAutoCheckStart1" Content="Button" HorizontalAlignment="Left" Margin="1044,161,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <Button x:Name="ButtonAutoCheckStart2" Content="Button" HorizontalAlignment="Left" Margin="1044,192,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <CheckBox x:Name="CheckBoxAutoCheck3" Content="Auto" HorizontalAlignment="Left" Margin="993,231,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="ButtonAutoCheckStart3" Content="Button" HorizontalAlignment="Left" Margin="1044,223,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.24,0.15" Height="23"/>
+        <RichTextBox x:Name="RichTextBoxLog" HorizontalAlignment="Left" Height="200" Margin="10,267,0,0" VerticalAlignment="Top" Width="1109">
+            <FlowDocument/>
+        </RichTextBox>
+
+    </Grid>
+</Window>
