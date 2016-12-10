@@ -7,14 +7,26 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Study Chapter 5", "Study Ch
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		1111|Any CPU = 1111|Any CPU
+		1111|x64 = 1111|x64
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.1111|Any CPU.ActiveCfg = 1111|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.1111|Any CPU.Build.0 = 1111|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.1111|x64.ActiveCfg = Debug|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.1111|x64.Build.0 = Debug|Any CPU
 		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Debug|x64.Build.0 = Debug|Any CPU
 		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Release|x64.ActiveCfg = Release|x64
+		{4AC5DE01-0166-490E-AA78-2443A56B0546}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
